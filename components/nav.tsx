@@ -1,13 +1,6 @@
+import { siteConfig } from "@/config/site";
 import { Logo } from "./logo/logo";
 import NavMenu from "./nav-menu";
-
-const navlinks = [
-  { name: "Inspiration", href: "/" },
-  { name: "Tools", href: "/" },
-  { name: "Resources", href: "/" },
-  { name: "Learning", href: "/" },
-  { name: "Blogs", href: "/" },
-];
 
 export default function Nav() {
   return (
@@ -25,7 +18,7 @@ export default function Nav() {
           <NavMenu />
         </div>
         <div className="hidden items-center justify-between gap-4 md:flex">
-          {navlinks.map((link) => (
+          {siteConfig.routes.map((link) => (
             <a
               key={link.name}
               href={link.href}

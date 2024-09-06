@@ -47,7 +47,7 @@ export default function RootLayout({
         >
           <Nav />
           <CtaFloating />
-          {children}
+          <main className="flex min-h-screen flex-col">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>
