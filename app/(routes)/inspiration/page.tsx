@@ -24,7 +24,7 @@ export default function page() {
         </p>
       </div>
 
-      <div className="mb-12 flex flex-row flex-nowrap gap-2">
+      <div className="mb-12 flex flex-row flex-wrap gap-2">
         {inspirationTags.map((tag) => (
           <Badge key={tag.name}>{tag.name}</Badge>
         ))}
@@ -44,7 +44,7 @@ export function EmptyState() {
       <div className="absolute bottom-0 right-0 size-4 border-b-2 border-r-2 border-border" />
 
       <CircleSlash2 className="size-16 text-muted" />
-      <h2>This is currently under construction</h2>
+      <h2 className="text-center">This is currently under construction</h2>
     </div>
   );
 }

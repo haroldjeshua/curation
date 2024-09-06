@@ -8,6 +8,7 @@ import {
   DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { siteConfig } from "@/config/site";
 
 import { Menu } from "lucide-react";
 
@@ -23,26 +24,12 @@ export default function NavMenu() {
         <DropdownMenuLabel>Navigation</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
-          <DropdownMenuItem>
-            <span>Inspiration</span>
-            <DropdownMenuShortcut>⌘1</DropdownMenuShortcut>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <span>Tools</span>
-            <DropdownMenuShortcut>⌘2</DropdownMenuShortcut>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <span>Resources</span>
-            <DropdownMenuShortcut>⌘3</DropdownMenuShortcut>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <span>Learning</span>
-            <DropdownMenuShortcut>⌘4</DropdownMenuShortcut>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <span>Blogs</span>
-            <DropdownMenuShortcut>⌘5</DropdownMenuShortcut>
-          </DropdownMenuItem>
+          {siteConfig.routes.map((link, index) => (
+            <DropdownMenuItem key={link.name}>
+              <a href={link.href}>{link.name}</a>
+              <DropdownMenuShortcut>⌘{index + 1}</DropdownMenuShortcut>
+            </DropdownMenuItem>
+          ))}
         </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>
