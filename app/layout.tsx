@@ -6,6 +6,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Nav from "@/components/nav";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import CtaFloating from "@/components/cta-floating";
+import Footer from "@/components/footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -44,7 +46,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Nav />
+          <CtaFloating />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

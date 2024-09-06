@@ -1,9 +1,12 @@
+import { Send } from "lucide-react";
+import { Button } from "./ui/button";
+
 export default function CtaFloating() {
   return (
-    <div className="fixed top-4 right-4">
-      <a href="/" className="rounded-full bg-primary p-4 text-foreground">
-        Submit
-      </a>
+    <div className="fixed right-4 top-4">
+      <Button variant="default">
+        <Send className="mr-2 size-4" /> Submit
+      </Button>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import { Logo } from "./logo/logo";
+import NavMenu from "./nav-menu";
 
 const navlinks = [
   { name: "Inspiration", href: "/" },
@@ -10,16 +11,30 @@ const navlinks = [
 
 export default function Nav() {
   return (
-    <nav className="fixed top-4 left-4 flex items-center justify-between gap-4 p-3 bg-background/50 border border-border/50 backdrop-blur-sm rounded-xl">
+    <nav className="fixed left-4 top-4 flex h-10 items-center justify-between gap-4 rounded-md border border-border bg-background/50 px-4 py-2 backdrop-blur-sm">
       <div className="flex items-center gap-4">
-        <a href="/" className="text-xl font-bold">
-          <Logo className="size-8 -rotate-90 aspect-square" />
+        <a
+          href="/"
+          className="text-xl font-bold"
+          title="Curation"
+          aria-label="Curation"
+        >
+          <Logo className="aspect-square size-4 -rotate-90" />
         </a>
-        {navlinks.map((link) => (
-          <a key={link.name} href={link.href} className="text-md font-medium">
-            {link.name}
-          </a>
-        ))}
+        <div className="flex md:hidden">
+          <NavMenu />
+        </div>
+        <div className="hidden items-center justify-between gap-4 md:flex">
+          {navlinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className="text-sm font-medium text-muted-foreground transition-colors ease-linear hover:text-foreground"
+            >
+              {link.name}
+            </a>
+          ))}
+        </div>
       </div>
     </nav>
   );
