@@ -24,7 +24,7 @@ export default function Nav() {
               href={link.href}
               className="text-sm font-medium text-muted-foreground transition-colors ease-linear hover:text-foreground"
             >
-              {link.name}
+              {link.label}
             </a>
           ))}
         </div>
