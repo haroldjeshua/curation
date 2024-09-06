@@ -34,7 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "font-sans antialiased",
+          "font-mono antialiased",
           geistSans.variable,
           geistMono.variable,
         )}

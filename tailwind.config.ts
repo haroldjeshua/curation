@@ -55,6 +55,22 @@ const config: Config = {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
+
+        // --- custom ---
+        // main
+        "lavender-pink": {
+          "50": "#fef1f9",
+          "100": "#fee5f4",
+          "200": "#feccea",
+          "300": "#ffb6e1",
+          "400": "#fe68bd",
+          "500": "#f83ca2",
+          "600": "#e81a7f",
+          "700": "#ca0c64",
+          "800": "#a70d52",
+          "900": "#8b1047",
+          "950": "#550227",
+        },
         carnation: {
           "50": "#fff1f1",
           "100": "#ffe1e1",
