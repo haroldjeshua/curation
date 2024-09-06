@@ -1,5 +1,5 @@
+import { EmptyState } from "@/components/empty-state";
 import { Badge } from "@/components/ui/badge";
-import { EmptyState } from "../inspiration/page";
 
 type ResourcesCategory = {
   name: string;
