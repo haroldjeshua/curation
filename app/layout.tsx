@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 import Nav from "@/components/nav";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,7 +31,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
+        className={cn(
+          "font-sans antialiased",
+          geistSans.variable,
+          geistMono.variable,
+        )}
       >
         <ThemeProvider
           attribute="class"
