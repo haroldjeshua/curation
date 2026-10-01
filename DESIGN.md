@@ -13,8 +13,10 @@ Warm paper neutrals + one editorial accent. No rainbow, no gradients in v1.
 | `muted` | `#F0EEEA` | `#1F1D1C` | Subtle surfaces, wells |
 | `muted-foreground` | `#78716C` | `#A8A29E` | Secondary text, meta |
 | `border` | `#E4E1DC` | `#2B2927` | Hairlines, card edges |
-| `accent` | `#C2410C` | `#F97316` | Links, focus, active states only |
+| `accent` | `#CA0C64` | `#FFB6E1` | Links, focus, active states, selection |
 | `accent-foreground` | `#FAFAF9` | `#131211` | Text on accent |
+
+Accent is the brand pink — the deep stop of the logo gradient in light mode, the light stop in dark mode. Both clear AA against their backgrounds.
 
 Rules: body copy is only `foreground` / `muted-foreground`. Accent is never a background wash — links, markers, focus rings. Dark mode is class-based (`.dark` via `next-themes`), tokens swap 1:1.
 
