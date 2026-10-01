@@ -23,7 +23,8 @@ Rules: body copy is only `foreground` / `muted-foreground`. Accent is never a ba
 ## Type
 
 - Sans: Geist Sans (`--font-geist-sans`), Mono: Geist Mono for meta/labels/data.
-- Titles `tracking-tight`, meta/labels uppercase `tracking-widest` at 11–12px in mono.
+- Titles `tracking-tight`, weight capped at `font-medium` — no bold anywhere on the site.
+- Meta/labels uppercase `tracking-widest` at 11–12px in mono.
 - No custom scale: Tailwind defaults (`text-sm` body, `text-3xl/4xl` titles). Entry notes set at `text-sm/relaxed`.
 
 ## Density

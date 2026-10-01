@@ -6,7 +6,7 @@ export function SiteFooter() {
           © 2026 Harv · All rights reserved.
         </p>
         <p className="hidden font-mono text-[11px] text-muted-foreground sm:block">
-          Every entry carries a curator&rsquo;s note — or it doesn&rsquo;t ship.
+          No entry ships without a note.
         </p>
       </div>
     </footer>

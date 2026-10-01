@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <section className="w-full max-w-2xl py-24">
       <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">404</p>
-      <h1 className="mt-2 text-3xl font-bold tracking-tight">Nothing curated here.</h1>
+      <h1 className="mt-2 text-3xl font-medium tracking-tight">Nothing curated here.</h1>
       <p className="mt-3 text-sm text-muted-foreground">
         This entry doesn&rsquo;t exist — or hasn&rsquo;t earned its note yet.
       </p>

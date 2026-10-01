@@ -53,7 +53,7 @@ export default async function EntryPage({
         </Link>
       </nav>
 
-      <h1 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">{entry.title}</h1>
+      <h1 className="mt-3 text-3xl font-medium tracking-tight sm:text-4xl">{entry.title}</h1>
       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{entry.tagline}</p>
 
       <a

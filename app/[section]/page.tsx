@@ -43,7 +43,7 @@ export default async function SectionPage({
       <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
         Section
       </p>
-      <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">{section.title}</h1>
+      <h1 className="mt-2 text-3xl font-medium tracking-tight sm:text-4xl">{section.title}</h1>
       <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
         {section.description}
       </p>
