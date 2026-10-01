@@ -26,3 +26,9 @@ pnpm add-entry --kind library --title "…" --url "https://…" --tagline "…" 
 ```
 
 New entries land as drafts; flip `status` to `published` after review. The build fails if a published entry lacks a note.
+
+## Annotate (dev only)
+
+`pnpm dev`, then use the toolbar (bottom-right, or Cmd/Ctrl+Shift+F): click any element, write feedback, copy the Markdown, paste it to your agent. Output includes selectors, source paths, and the component tree — no more "the blue button" guessing. The toolbar never ships to production (dev-only dynamic import).
+
+Optional real-time sync for local agents: `npx agentation-mcp server`, with the toolbar already pointed at `http://localhost:4747` (see `components/annotation-tools.tsx`).
