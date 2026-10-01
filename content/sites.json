@@ -1,0 +1,34 @@
+[
+  {
+    "id": "seed-site-01",
+    "slug": "example-studio-site",
+    "kind": "site",
+    "title": "Example Studio Site",
+    "url": "https://example.com/studio",
+    "tagline": "A fictional studio site proving the entry model.",
+    "note": "Seed entry. Note how the write-up names one thing to steal: the project index that reads like a table of contents, not a carousel.",
+    "tags": ["editorial", "typography", "motion"],
+    "status": "published",
+    "source": "seed",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": { "type": "agency", "industry": ["design"], "captured_at": "2026-10-01" }
+  },
+  {
+    "id": "seed-site-02",
+    "slug": "example-product-site",
+    "kind": "site",
+    "title": "Example Product Site",
+    "url": "https://example.com/product",
+    "tagline": "A fictional product page proving the entry model.",
+    "note": "Seed entry. Steal the pricing-page structure: one idea per viewport, no competing CTAs above the fold.",
+    "tags": ["product", "pricing", "hierarchy"],
+    "status": "published",
+    "source": "seed",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": { "type": "product", "industry": ["saas"], "captured_at": "2026-10-01" }
+  }
+]

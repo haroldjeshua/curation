@@ -1,0 +1,447 @@
+[
+  {
+    "id": "rd-josh-comeau",
+    "slug": "josh-comeau",
+    "kind": "reading",
+    "title": "Josh Comeau",
+    "url": "https://www.joshwcomeau.com",
+    "tagline": "Interactive CSS and React essays that make hard ideas click.",
+    "note": "The flexbox and rendering-performance posts are canonical — assign them before any debate about layout. Steal the teaching method: every abstract idea anchored to a widget you can poke.",
+    "tags": [
+      "css",
+      "react",
+      "essays"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "blog"
+    }
+  },
+  {
+    "id": "rd-overreacted",
+    "slug": "overreacted",
+    "kind": "reading",
+    "title": "Overreacted",
+    "url": "https://overreacted.io",
+    "tagline": "Dan Abramov's React mental models in plain language.",
+    "note": "Read the effects and closures pieces twice. Few writers separate what React does from what you should do as cleanly — required reading before arguing about hooks.",
+    "tags": [
+      "react",
+      "javascript",
+      "mental-models"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "blog"
+    }
+  },
+  {
+    "id": "rd-emil-kowalski",
+    "slug": "emil-kowalski",
+    "kind": "reading",
+    "title": "Emil Kowalski",
+    "url": "https://emilkowal.ski",
+    "tagline": "Animation and interaction craft, every post shipping a demo.",
+    "note": "The reference for UI that feels physical. Study how each post isolates one interaction variable — duration, spring, gesture — until the right value is undeniable.",
+    "tags": [
+      "animation",
+      "interaction",
+      "craft"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "blog"
+    }
+  },
+  {
+    "id": "rd-rauno",
+    "slug": "rauno-freiberg",
+    "kind": "reading",
+    "title": "Rauno Freiberg",
+    "url": "https://rauno.me",
+    "tagline": "Short, sharp notes on interface details most teams never notice.",
+    "note": "Proof that taste is attention: tiny observations about spacing, timing, and states that compound into obviously better interfaces. Read in one sitting.",
+    "tags": [
+      "interfaces",
+      "details",
+      "craft"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "blog"
+    }
+  },
+  {
+    "id": "rd-leerob",
+    "slug": "lee-robinson",
+    "kind": "reading",
+    "title": "Lee Robinson",
+    "url": "https://leerob.io",
+    "tagline": "Frontend performance and shipping notes from Vercel's VP of product.",
+    "note": "The Web Vitals writing is relentlessly practical — what to measure, what to fix first. Steal the prioritization: performance budgets before performance tricks.",
+    "tags": [
+      "performance",
+      "nextjs",
+      "shipping"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "blog"
+    }
+  },
+  {
+    "id": "rd-delba",
+    "slug": "delba",
+    "kind": "reading",
+    "title": "Delba",
+    "url": "https://delba.dev",
+    "tagline": "DX engineering notes on caching, RSC, and the details behind the docs.",
+    "note": "Where Next.js caching finally makes sense. Read the caching posts before touching a fetch call — they explain the why that the reference docs assume.",
+    "tags": [
+      "nextjs",
+      "caching",
+      "engineering"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "blog"
+    }
+  },
+  {
+    "id": "rd-robin-rendle",
+    "slug": "robin-rendle",
+    "kind": "reading",
+    "title": "Robin Rendle",
+    "url": "https://www.robinrendle.com",
+    "tagline": "Design criticism with a long memory, from type history to interfaces.",
+    "note": "Connects today's interfaces to centuries of typographic craft. Read when your work feels ahistorical — it cures the blank-canvas amnesia of framework churn.",
+    "tags": [
+      "criticism",
+      "typography",
+      "essays"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "blog"
+    }
+  },
+  {
+    "id": "rd-antfu",
+    "slug": "anthony-fu",
+    "kind": "reading",
+    "title": "Anthony Fu",
+    "url": "https://antfu.me",
+    "tagline": "Open-source velocity in public: tools, UnoCSS, and maintainer craft.",
+    "note": "A masterclass in building in the open — small modules, fast iteration, honest changelogs. Steal the release cadence and the way each tool does exactly one thing.",
+    "tags": [
+      "open-source",
+      "tooling",
+      "vue"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "blog"
+    }
+  },
+  {
+    "id": "rd-vercel-blog",
+    "slug": "vercel-blog",
+    "kind": "reading",
+    "title": "Vercel Blog",
+    "url": "https://vercel.com/blog",
+    "tagline": "Engineering write-ups behind Next.js and the platform.",
+    "note": "The launch posts double as positioning lessons: each one frames a technical decision as a user outcome. Read for the infrastructure, study for the communication.",
+    "tags": [
+      "engineering",
+      "platform",
+      "nextjs"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "blog"
+    }
+  },
+  {
+    "id": "rd-figma-blog",
+    "slug": "figma-blog",
+    "kind": "reading",
+    "title": "Figma Blog",
+    "url": "https://www.figma.com/blog/",
+    "tagline": "Design-tooling thinking from the source, plus Config talk recaps.",
+    "note": "Where design engineering direction gets announced first — variables, Dev Mode, code connect. Skim monthly to stay ahead of the Figma-to-code curve.",
+    "tags": [
+      "design",
+      "tooling",
+      "figma"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "blog"
+    }
+  },
+  {
+    "id": "rd-linear-blog",
+    "slug": "linear-blog",
+    "kind": "reading",
+    "title": "Linear Blog",
+    "url": "https://linear.app/blog",
+    "tagline": "Opinionated product engineering: quality, craft, and saying no.",
+    "note": "The best corporate blog on saying no — to features, to speed, to mediocrity. The quality and method posts are a playbook for small teams with high standards.",
+    "tags": [
+      "product",
+      "craft",
+      "engineering"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "blog"
+    }
+  },
+  {
+    "id": "rd-nng",
+    "slug": "nngroup-articles",
+    "kind": "reading",
+    "title": "Nielsen Norman Group Articles",
+    "url": "https://www.nngroup.com/articles/",
+    "tagline": "Evidence over opinion for UX decisions — the citation that ends debates.",
+    "note": "When a stakeholder wants a clever interaction, answer with research. The form and navigation studies are the highest-leverage bookmarks a designer can hold.",
+    "tags": [
+      "research",
+      "ux",
+      "evidence"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "blog"
+    }
+  },
+  {
+    "id": "rd-dense-discovery",
+    "slug": "dense-discovery",
+    "kind": "reading",
+    "title": "Dense Discovery",
+    "url": "https://www.densediscovery.com",
+    "tagline": "Weekly design, tech, and sustainability curation with actual taste.",
+    "note": "The closest existing model to this library's voice — selective, opinionated, calmly written. Study the issue structure: few links, real context, zero hype.",
+    "tags": [
+      "curation",
+      "design",
+      "weekly"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "newsletter",
+      "cadence": "weekly"
+    }
+  },
+  {
+    "id": "rd-bytes",
+    "slug": "bytes-newsletter",
+    "kind": "reading",
+    "title": "Bytes",
+    "url": "https://bytes.dev",
+    "tagline": "JavaScript news with jokes that land, three times a week.",
+    "note": "The fastest way to stay current on the JS ecosystem without doomscrolling. The humor is load-bearing — it makes release notes memorable.",
+    "tags": [
+      "javascript",
+      "newsletter",
+      "ecosystem"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "newsletter",
+      "cadence": "3x weekly"
+    }
+  },
+  {
+    "id": "rd-css-weekly",
+    "slug": "css-weekly",
+    "kind": "reading",
+    "title": "CSS Weekly",
+    "url": "https://css-weekly.com",
+    "tagline": "One CSS email, zero fluff — the archives double as a curriculum.",
+    "note": "Read back through a year of archives and you'll have covered the whole modern CSS surface. The signal-to-noise ratio other newsletters should envy.",
+    "tags": [
+      "css",
+      "newsletter",
+      "weekly"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "newsletter",
+      "cadence": "weekly"
+    }
+  },
+  {
+    "id": "rd-frontend-focus",
+    "slug": "frontend-focus",
+    "kind": "reading",
+    "title": "Frontend Focus",
+    "url": "https://frontendfocus.co",
+    "tagline": "Cooper Press's curated frontend links — broad without being shallow.",
+    "note": "The weekly scan for everything frontend: browser news, techniques, tools. Skim the headlines, deep-dive one link — that's the whole workflow.",
+    "tags": [
+      "frontend",
+      "newsletter",
+      "weekly"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "newsletter",
+      "cadence": "weekly"
+    }
+  },
+  {
+    "id": "rd-sidebar",
+    "slug": "sidebar",
+    "kind": "reading",
+    "title": "Sidebar",
+    "url": "https://sidebar.io",
+    "tagline": "Five human-picked design links a day, running since 2012.",
+    "note": "The longevity is the endorsement — over a decade of daily curation without diluting. Proof that a small, consistent editorial habit compounds.",
+    "tags": [
+      "design",
+      "links",
+      "daily"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "newsletter",
+      "cadence": "daily"
+    }
+  },
+  {
+    "id": "rd-smashing",
+    "slug": "smashing-magazine",
+    "kind": "reading",
+    "title": "Smashing Magazine",
+    "url": "https://www.smashingmagazine.com",
+    "tagline": "Long-form front-end with a high editorial bar.",
+    "note": "The accessibility and CSS archives are deep enough to be a reference library on their own. When you need the definitive article on a technique, check here first.",
+    "tags": [
+      "frontend",
+      "accessibility",
+      "css"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "magazine"
+    }
+  },
+  {
+    "id": "rd-css-for-js",
+    "slug": "css-for-js-developers",
+    "kind": "reading",
+    "title": "CSS for JavaScript Developers",
+    "url": "https://css-for-js.dev",
+    "tagline": "The course that makes experienced JS developers stop fearing CSS.",
+    "note": "Rebuilds CSS from the mental model up instead of property by property. The module on rendering and layout alone justifies it for any React developer.",
+    "tags": [
+      "css",
+      "course",
+      "react"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "course"
+    }
+  },
+  {
+    "id": "rd-web-dev-learn",
+    "slug": "learn-web-development",
+    "kind": "reading",
+    "title": "Learn Web Development",
+    "url": "https://web.dev/learn",
+    "tagline": "Google's free, structured, current courses — the CSS and forms paths first.",
+    "note": "The rare free resource with professional structure. Assign the CSS and forms paths to anyone onboarding into frontend; they're better than most paid courses.",
+    "tags": [
+      "css",
+      "html",
+      "free"
+    ],
+    "status": "published",
+    "source": "curator",
+    "added_at": "2026-10-01",
+    "reviewed_at": "2026-10-01",
+    "link_status": "unknown",
+    "meta": {
+      "format": "course"
+    }
+  }
+]
