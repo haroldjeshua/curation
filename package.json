@@ -9,7 +9,11 @@
     "lint": "eslint",
     "prebuild": "node scripts/generate-machine-surface.mjs",
     "generate-surface": "node scripts/generate-machine-surface.mjs",
-    "add-entry": "node scripts/add-entry.mjs"
+    "add-entry": "node scripts/add-entry.mjs",
+    "intake:validate": "node scripts/intake-validate.mjs",
+    "intake:seed": "node scripts/intake-seed.mjs",
+    "intake:obsidian": "node scripts/intake-obsidian.mjs",
+    "intake:bookmarks": "node scripts/intake-bookmarks.mjs"
   },
   "dependencies": {
     "cmdk": "^1.1.1",

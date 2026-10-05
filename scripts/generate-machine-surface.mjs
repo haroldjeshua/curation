@@ -1,7 +1,7 @@
 // Generates the machine surface from content/*.json. Runs on `prebuild`
 // (every deploy) and manually via `pnpm generate-surface`.
 // Fails the build if any published entry breaks the editorial rule:
-// no note, no entry.
+// no note, no entry — or if a seed placeholder reaches production.
 
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -30,6 +30,10 @@ for (const { kind, file, section } of kinds) {
     if (seen.has(e.slug)) errors.push(`${file}: duplicate slug ${e.slug}`);
     seen.add(e.slug);
     if (e.status !== "published") continue;
+    if (e.source === "seed") {
+      errors.push(`${file}: published entry ${e.slug} is a seed placeholder — replace via the funnel (PLAYBOOK §7)`);
+      continue;
+    }
     for (const field of ["title", "url", "tagline", "note"]) {
       if (typeof e[field] !== "string" || e[field].trim().length === 0) {
         errors.push(`${file}: published entry ${e.slug} is missing ${field}`);

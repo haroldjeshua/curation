@@ -7,13 +7,23 @@
     "url": "https://primer.style",
     "tagline": "GitHub's design system: React components and CSS with accessibility in the API.",
     "note": "The reference for doing enterprise UI without enterprise slop. Steal Primer React's composition model and its focus-management discipline — accessibility lives in the component contract, not in a docs footnote.",
-    "tags": ["react", "accessibility", "components"],
+    "tags": [
+      "react",
+      "accessibility",
+      "components"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "org": "GitHub", "docs_url": "https://primer.style", "focus": "components" }
+    "meta": {
+      "org": "GitHub",
+      "docs_url": "https://primer.style",
+      "focus": "components"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "sys-polaris",
@@ -23,13 +33,23 @@
     "url": "https://polaris.shopify.com",
     "tagline": "Shopify's system for admin interfaces, strong on judgment over widgets.",
     "note": "The rare system that teaches when not to use a pattern. Read the content and information-architecture guidance before touching the components — that's where the value is.",
-    "tags": ["patterns", "admin", "guidelines"],
+    "tags": [
+      "patterns",
+      "admin",
+      "guidelines"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "org": "Shopify", "docs_url": "https://polaris.shopify.com", "focus": "patterns" }
+    "meta": {
+      "org": "Shopify",
+      "docs_url": "https://polaris.shopify.com",
+      "focus": "patterns"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "sys-atlassian",
@@ -39,13 +59,23 @@
     "url": "https://atlassian.design",
     "tagline": "Foundations with unusual depth on content, terminology, and tokens.",
     "note": "Go for the foundations, stay for the terminology pages. Few public systems take naming and content standards this seriously — steal the habit of documenting words alongside components.",
-    "tags": ["foundations", "content", "tokens"],
+    "tags": [
+      "foundations",
+      "content",
+      "tokens"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "org": "Atlassian", "docs_url": "https://atlassian.design", "focus": "foundations" }
+    "meta": {
+      "org": "Atlassian",
+      "docs_url": "https://atlassian.design",
+      "focus": "foundations"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "sys-carbon",
@@ -55,13 +85,23 @@
     "url": "https://carbon.design",
     "tagline": "IBM's data-dense enterprise system, open-sourced with unusual rigor.",
     "note": "The data-table and dashboard guidance is the best public reference for dense UI. Steal the spacing rhythm that keeps 12-column data grids readable instead of merely present.",
-    "tags": ["enterprise", "data", "react"],
+    "tags": [
+      "enterprise",
+      "data",
+      "react"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "org": "IBM", "docs_url": "https://carbon.design", "focus": "components" }
+    "meta": {
+      "org": "IBM",
+      "docs_url": "https://carbon.design",
+      "focus": "components"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "sys-material",
@@ -71,13 +111,23 @@
     "url": "https://m3.material.io",
     "tagline": "Google's full-stack spec: color, type, motion, and interaction in one place.",
     "note": "Overkill as a whole, invaluable in parts. Steal the motion tokens and easing guidance — it's the most complete public motion spec — and ignore the parts that would make your product look like Google.",
-    "tags": ["mobile", "motion", "tokens"],
+    "tags": [
+      "mobile",
+      "motion",
+      "tokens"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "org": "Google", "docs_url": "https://m3.material.io", "focus": "guidelines" }
+    "meta": {
+      "org": "Google",
+      "docs_url": "https://m3.material.io",
+      "focus": "guidelines"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "sys-apple-hig",
@@ -87,13 +137,23 @@
     "url": "https://developer.apple.com/design/human-interface-guidelines",
     "tagline": "The platform canon on restraint: every control justified by a human reason.",
     "note": "Still the best writing on saying no. Read any single control's page to see how Apple reasons from human capability to pixel — then apply that reasoning to your own components.",
-    "tags": ["ios", "macos", "guidelines"],
+    "tags": [
+      "ios",
+      "macos",
+      "guidelines"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "org": "Apple", "docs_url": "https://developer.apple.com/design/human-interface-guidelines", "focus": "guidelines" }
+    "meta": {
+      "org": "Apple",
+      "docs_url": "https://developer.apple.com/design/human-interface-guidelines",
+      "focus": "guidelines"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "sys-fluent",
@@ -103,13 +163,23 @@
     "url": "https://fluent2.microsoft.design",
     "tagline": "Microsoft's cross-platform tokens with per-component accessibility requirements.",
     "note": "Worth studying for the token architecture across platforms and the way accessibility requirements are stated per component rather than in a separate chapter nobody reads.",
-    "tags": ["tokens", "cross-platform", "accessibility"],
+    "tags": [
+      "tokens",
+      "cross-platform",
+      "accessibility"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "org": "Microsoft", "docs_url": "https://fluent2.microsoft.design", "focus": "tokens" }
+    "meta": {
+      "org": "Microsoft",
+      "docs_url": "https://fluent2.microsoft.design",
+      "focus": "tokens"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "sys-spectrum",
@@ -119,13 +189,23 @@
     "url": "https://spectrum.adobe.com",
     "tagline": "Adobe's system, notable for cleanly layered global, alias, and component tokens.",
     "note": "Spectrum Tokens is the clearest public example of token layering done right: base scales stay dumb, aliases carry intent, components never touch raw values. Copy the layering, whatever your scale.",
-    "tags": ["tokens", "theming", "css"],
+    "tags": [
+      "tokens",
+      "theming",
+      "css"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "org": "Adobe", "docs_url": "https://spectrum.adobe.com", "focus": "tokens" }
+    "meta": {
+      "org": "Adobe",
+      "docs_url": "https://spectrum.adobe.com",
+      "focus": "tokens"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "sys-slds",
@@ -135,13 +215,23 @@
     "url": "https://lightningdesignsystem.com",
     "tagline": "Salesforce's blueprints for dense admin UI, with a pragmatic utility escape hatch.",
     "note": "If your product has settings pages, record views, or data entry, start here. Steal the blueprint concept — full-page patterns, not just components — and the honesty about when to break out to utilities.",
-    "tags": ["enterprise", "admin", "css"],
+    "tags": [
+      "enterprise",
+      "admin",
+      "css"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "org": "Salesforce", "docs_url": "https://lightningdesignsystem.com", "focus": "components" }
+    "meta": {
+      "org": "Salesforce",
+      "docs_url": "https://lightningdesignsystem.com",
+      "focus": "components"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "sys-base",
@@ -151,13 +241,23 @@
     "url": "https://base.uber.com",
     "tagline": "Uber's React system built on overrides instead of theming props.",
     "note": "A genuinely different answer to customization: deep overrides rather than a theme object. Worth studying before you decide your own system's extension model — it makes different trade-offs than everything else on this list.",
-    "tags": ["react", "theming", "overrides"],
+    "tags": [
+      "react",
+      "theming",
+      "overrides"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "org": "Uber", "docs_url": "https://base.uber.com", "focus": "components" }
+    "meta": {
+      "org": "Uber",
+      "docs_url": "https://base.uber.com",
+      "focus": "components"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "sys-govuk",
@@ -167,13 +267,23 @@
     "url": "https://design-system.service.gov.uk",
     "tagline": "Proof that boring is a feature: tested patterns starting from user needs.",
     "note": "Every pattern ships with research behind it. When a stakeholder asks for a clever form interaction, this is the citation that ends the discussion — and the form patterns themselves are flawless.",
-    "tags": ["accessibility", "patterns", "public-sector"],
+    "tags": [
+      "accessibility",
+      "patterns",
+      "public-sector"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "org": "GOV.UK", "docs_url": "https://design-system.service.gov.uk", "focus": "patterns" }
+    "meta": {
+      "org": "GOV.UK",
+      "docs_url": "https://design-system.service.gov.uk",
+      "focus": "patterns"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "sys-uswds",
@@ -183,13 +293,23 @@
     "url": "https://designsystem.digital.gov",
     "tagline": "The federal system, with maturity and contribution guidance worth copying.",
     "note": "Beyond the components, steal the maturity model: it gives teams an honest ladder from ad-hoc pages to a real system. The contribution docs are a template for any public-sector or open-source system.",
-    "tags": ["public-sector", "maturity", "open-source"],
+    "tags": [
+      "public-sector",
+      "maturity",
+      "open-source"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "org": "U.S. Federal Government", "docs_url": "https://designsystem.digital.gov", "focus": "foundations" }
+    "meta": {
+      "org": "U.S. Federal Government",
+      "docs_url": "https://designsystem.digital.gov",
+      "focus": "foundations"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "sys-pajamas",
@@ -199,13 +319,23 @@
     "url": "https://design.gitlab.com",
     "tagline": "GitLab's Figma-first system with honest docs about what's stable.",
     "note": "Refreshingly transparent about component maturity and design-to-code gaps. Worth reading for any team where Figma leads and code follows — the handoff documentation is the product.",
-    "tags": ["figma", "transparency", "components"],
+    "tags": [
+      "figma",
+      "transparency",
+      "components"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "org": "GitLab", "docs_url": "https://design.gitlab.com", "focus": "components" }
+    "meta": {
+      "org": "GitLab",
+      "docs_url": "https://design.gitlab.com",
+      "focus": "components"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "sys-stacks",
@@ -215,13 +345,23 @@
     "url": "https://stackoverflow.design",
     "tagline": "Stack Overflow's utility-first CSS with atomic classes and content guidelines.",
     "note": "Atomic CSS before it was fashionable, plus content guidelines most developer tools skip. Steal the restraint: a small set of utilities composed well beats a sprawling component API.",
-    "tags": ["css", "utilities", "content"],
+    "tags": [
+      "css",
+      "utilities",
+      "content"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "org": "Stack Overflow", "docs_url": "https://stackoverflow.design", "focus": "foundations" }
+    "meta": {
+      "org": "Stack Overflow",
+      "docs_url": "https://stackoverflow.design",
+      "focus": "foundations"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "sys-gel",
@@ -231,12 +371,22 @@
     "url": "https://bbc.github.io/gel",
     "tagline": "The BBC's global experience language, with accessibility as the first chapter.",
     "note": "Designed for everyone on every device, in any language, on any bandwidth. The accessibility and inclusive-design foundations are the ones to assign to anyone who thinks systems are about buttons.",
-    "tags": ["accessibility", "global", "guidelines"],
+    "tags": [
+      "accessibility",
+      "global",
+      "guidelines"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "org": "BBC", "docs_url": "https://bbc.github.io/gel", "focus": "guidelines" }
+    "meta": {
+      "org": "BBC",
+      "docs_url": "https://bbc.github.io/gel",
+      "focus": "guidelines"
+    },
+    "lens": [],
+    "featured": false
   }
 ]

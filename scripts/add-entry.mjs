@@ -2,6 +2,7 @@
 // Usage:
 //   pnpm add-entry --kind library --title "Radix Primitives" --url "https://…" \
 //     --tagline "…" --note "…" [--tags "react,accessibility"] [--meta '{"category":"ui"}']
+//     [--lens "craft,deseng"] [--featured]
 // New entries land as drafts; flip `status` to `published` after review.
 
 import { readFileSync, writeFileSync } from "node:fs";
@@ -81,6 +82,8 @@ const entry = {
   added_at: today,
   reviewed_at: today,
   link_status: "unknown",
+  lens: args.lens ? args.lens.split(",").map((t) => t.trim()).filter(Boolean) : [],
+  featured: args.featured === "true",
   meta,
 };
 

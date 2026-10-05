@@ -7,13 +7,25 @@
     "url": "https://www.radix-ui.com/primitives",
     "tagline": "Unstyled, accessible React primitives with correct keyboard behavior built in.",
     "note": "The default answer for dialogs, menus, and popovers. Steal the composition API — parts, not props — and never hand-roll focus trapping again.",
-    "tags": ["react", "accessibility", "components"],
+    "tags": [
+      "react",
+      "accessibility",
+      "components"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "category": "ui", "frameworks": ["react"], "license": "MIT" }
+    "meta": {
+      "category": "ui",
+      "frameworks": [
+        "react"
+      ],
+      "license": "MIT"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "lib-react-aria",
@@ -23,13 +35,25 @@
     "url": "https://react-spectrum.adobe.com/react-aria/",
     "tagline": "Adobe's behavior hooks with the deepest accessibility thinking in open source.",
     "note": "Separates behavior from styling completely — hooks for logic, your CSS for looks. When Radix can't cover a complex widget, this is the next level down.",
-    "tags": ["react", "accessibility", "hooks"],
+    "tags": [
+      "react",
+      "accessibility",
+      "hooks"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "category": "ui", "frameworks": ["react"], "license": "Apache-2.0" }
+    "meta": {
+      "category": "ui",
+      "frameworks": [
+        "react"
+      ],
+      "license": "Apache-2.0"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "lib-headlessui",
@@ -39,13 +63,26 @@
     "url": "https://headlessui.com",
     "tagline": "The Tailwind team's unstyled components, with a gentle transitions API.",
     "note": "If you live in Tailwind, start here. The enter/leave transition model is the kindest way to add motion to menus and dialogs without reaching for a library.",
-    "tags": ["react", "vue", "tailwind"],
+    "tags": [
+      "react",
+      "vue",
+      "tailwind"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "category": "ui", "frameworks": ["react", "vue"], "license": "MIT" }
+    "meta": {
+      "category": "ui",
+      "frameworks": [
+        "react",
+        "vue"
+      ],
+      "license": "MIT"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "lib-base-ui",
@@ -55,13 +92,25 @@
     "url": "https://base-ui.com",
     "tagline": "The Radix lineage continued: accessible primitives with modern form controls.",
     "note": "Watch how it handles the hard parts other libraries dodge — sliders, selects, composite widgets. The direction Radix's thinking is heading.",
-    "tags": ["react", "accessibility", "components"],
+    "tags": [
+      "react",
+      "accessibility",
+      "components"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "category": "ui", "frameworks": ["react"], "license": "MIT" }
+    "meta": {
+      "category": "ui",
+      "frameworks": [
+        "react"
+      ],
+      "license": "MIT"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "lib-shadcn",
@@ -71,13 +120,25 @@
     "url": "https://ui.shadcn.com",
     "tagline": "Copy-paste components you own, distributed through a registry model.",
     "note": "The innovation isn't the components — it's distribution without dependency. Steal the registry idea for your own system: versioned, installable, forkable by default.",
-    "tags": ["react", "tailwind", "registry"],
+    "tags": [
+      "react",
+      "tailwind",
+      "registry"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "category": "ui", "frameworks": ["react"], "license": "MIT" }
+    "meta": {
+      "category": "ui",
+      "frameworks": [
+        "react"
+      ],
+      "license": "MIT"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "lib-lucide",
@@ -87,13 +148,28 @@
     "url": "https://lucide.dev",
     "tagline": "The community Feather fork that won: consistent stroke icons for every framework.",
     "note": "Default icon set for new projects. Consistent 24px grid, tree-shakeable, every framework covered — the boring choice that ends icon debates.",
-    "tags": ["icons", "svg", "open-source"],
+    "tags": [
+      "icons",
+      "svg",
+      "open-source"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "category": "icons", "frameworks": ["react", "vue", "svelte", "web"], "license": "ISC" }
+    "meta": {
+      "category": "icons",
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "web"
+      ],
+      "license": "ISC"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "lib-heroicons",
@@ -103,13 +179,26 @@
     "url": "https://heroicons.com",
     "tagline": "Hand-crafted Tailwind icons in outline and solid — a lesson in optical sizing.",
     "note": "Small set, impeccable craft. Compare outline vs solid at 16px to learn why icons need grades, then decide if you need a bigger library at all.",
-    "tags": ["icons", "svg", "tailwind"],
+    "tags": [
+      "icons",
+      "svg",
+      "tailwind"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "category": "icons", "frameworks": ["react", "vue"], "license": "MIT" }
+    "meta": {
+      "category": "icons",
+      "frameworks": [
+        "react",
+        "vue"
+      ],
+      "license": "MIT"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "lib-phosphor",
@@ -119,13 +208,27 @@
     "url": "https://phosphoricons.com",
     "tagline": "Six weights per icon — the fastest way to learn why icons need grades.",
     "note": "Thin for marketing pages, bold for dense UI, duotone for flair — one family, six voices. The weight axis alone justifies switching from a flat set.",
-    "tags": ["icons", "svg", "weights"],
+    "tags": [
+      "icons",
+      "svg",
+      "weights"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "category": "icons", "frameworks": ["react", "vue", "web"], "license": "MIT" }
+    "meta": {
+      "category": "icons",
+      "frameworks": [
+        "react",
+        "vue",
+        "web"
+      ],
+      "license": "MIT"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "lib-motion",
@@ -135,13 +238,27 @@
     "url": "https://motion.dev",
     "tagline": "Framer Motion's successor: spring physics with sensible defaults, any framework.",
     "note": "Springs over durations for anything that moves with intent. The layout-animation API remains the fastest path from static mock to living interface.",
-    "tags": ["animation", "springs", "interaction"],
+    "tags": [
+      "animation",
+      "springs",
+      "interaction"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "category": "motion", "frameworks": ["react", "vue", "vanilla"], "license": "MIT" }
+    "meta": {
+      "category": "motion",
+      "frameworks": [
+        "react",
+        "vue",
+        "vanilla"
+      ],
+      "license": "MIT"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "lib-react-spring",
@@ -151,13 +268,25 @@
     "url": "https://www.react-spring.dev",
     "tagline": "Physics-based animation with trails and chains for orchestrated lists.",
     "note": "When Motion's springs aren't enough control, come here. useTrail and useChain are the vocabulary for staggered, choreographed UI that still feels physical.",
-    "tags": ["animation", "physics", "react"],
+    "tags": [
+      "animation",
+      "physics",
+      "react"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "category": "motion", "frameworks": ["react"], "license": "MIT" }
+    "meta": {
+      "category": "motion",
+      "frameworks": [
+        "react"
+      ],
+      "license": "MIT"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "lib-google-fonts",
@@ -167,13 +296,23 @@
     "url": "https://fonts.google.com",
     "tagline": "Open-licensed fonts with variable axes — filter by axis, not just family.",
     "note": "The variable-font filter is the feature: weight, width, and optical-size axes in one file. Prototype type systems here before committing to a paid family.",
-    "tags": ["typography", "fonts", "open-source"],
+    "tags": [
+      "typography",
+      "fonts",
+      "open-source"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "category": "fonts", "frameworks": [], "license": "OFL / Apache-2.0" }
+    "meta": {
+      "category": "fonts",
+      "frameworks": [],
+      "license": "OFL / Apache-2.0"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "lib-fontsource",
@@ -183,13 +322,23 @@
     "url": "https://fontsource.org",
     "tagline": "Self-host any open font via npm and kill the render-blocking font request.",
     "note": "One install, subsetted weights, zero third-party requests. The performance argument for self-hosting ends here — pair with next/font and move on.",
-    "tags": ["typography", "performance", "npm"],
+    "tags": [
+      "typography",
+      "performance",
+      "npm"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "category": "fonts", "frameworks": [], "license": "MIT (packaging)" }
+    "meta": {
+      "category": "fonts",
+      "frameworks": [],
+      "license": "MIT (packaging)"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "lib-mdn",
@@ -199,13 +348,23 @@
     "url": "https://developer.mozilla.org",
     "tagline": "The canonical web reference — the compatibility tables are the product.",
     "note": "Folded into Libraries as a reference, per the IA decision. When an agent or teammate asserts browser support, this is the only citation that counts.",
-    "tags": ["reference", "css", "javascript"],
+    "tags": [
+      "reference",
+      "css",
+      "javascript"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "category": "reference", "frameworks": [], "license": "CC-BY-SA" }
+    "meta": {
+      "category": "reference",
+      "frameworks": [],
+      "license": "CC-BY-SA"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "lib-caniuse",
@@ -215,13 +374,23 @@
     "url": "https://caniuse.com",
     "tagline": "One lookup before every modern CSS decision.",
     "note": "Check here before reaching for a polyfill or a fallback. Pair it with Baseline guidance and most 'is it safe yet' debates resolve in seconds.",
-    "tags": ["reference", "css", "compatibility"],
+    "tags": [
+      "reference",
+      "css",
+      "compatibility"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "category": "reference", "frameworks": [], "license": "CC-BY" }
+    "meta": {
+      "category": "reference",
+      "frameworks": [],
+      "license": "CC-BY"
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "lib-easings",
@@ -231,12 +400,22 @@
     "url": "https://easings.net",
     "tagline": "Every easing visualized, with cubic-bezier values ready to copy.",
     "note": "Default to easeOutExpo for UI entrances and stop using ease-in-out for everything. One page that permanently upgrades your motion taste.",
-    "tags": ["reference", "motion", "easing"],
+    "tags": [
+      "reference",
+      "motion",
+      "easing"
+    ],
     "status": "published",
     "source": "curator",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "category": "reference", "frameworks": [], "license": "Free" }
+    "meta": {
+      "category": "reference",
+      "frameworks": [],
+      "license": "Free"
+    },
+    "lens": [],
+    "featured": false
   }
 ]

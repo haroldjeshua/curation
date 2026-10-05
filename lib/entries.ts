@@ -7,6 +7,7 @@ import { join } from "node:path";
 export type EntryKind = "site" | "system" | "library" | "skill" | "reading";
 export type EntryStatus = "draft" | "published" | "archived";
 export type EntrySource = "curator" | "suggestion" | "seed";
+export type Lens = "craft" | "deseng" | "delight";
 
 export interface Entry {
   id: string;
@@ -24,6 +25,10 @@ export interface Entry {
   reviewed_at: string;
   link_status: "unknown" | "ok" | "dead";
   media?: { thumbnail?: string };
+  /** Why it's good — orthogonal to kind. Empty until triaged. */
+  lens: Lens[];
+  /** Optional: a small set of essentials. */
+  featured?: boolean;
   meta: Record<string, unknown>;
 }
 

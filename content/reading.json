@@ -19,7 +19,9 @@
     "link_status": "unknown",
     "meta": {
       "format": "blog"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-overreacted",
@@ -41,7 +43,9 @@
     "link_status": "unknown",
     "meta": {
       "format": "blog"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-emil-kowalski",
@@ -63,7 +67,9 @@
     "link_status": "unknown",
     "meta": {
       "format": "blog"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-rauno",
@@ -85,7 +91,9 @@
     "link_status": "unknown",
     "meta": {
       "format": "blog"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-leerob",
@@ -107,7 +115,9 @@
     "link_status": "unknown",
     "meta": {
       "format": "blog"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-delba",
@@ -129,7 +139,9 @@
     "link_status": "unknown",
     "meta": {
       "format": "blog"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-robin-rendle",
@@ -151,7 +163,9 @@
     "link_status": "unknown",
     "meta": {
       "format": "blog"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-antfu",
@@ -173,7 +187,9 @@
     "link_status": "unknown",
     "meta": {
       "format": "blog"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-vercel-blog",
@@ -195,7 +211,9 @@
     "link_status": "unknown",
     "meta": {
       "format": "blog"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-figma-blog",
@@ -217,7 +235,9 @@
     "link_status": "unknown",
     "meta": {
       "format": "blog"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-linear-blog",
@@ -239,7 +259,9 @@
     "link_status": "unknown",
     "meta": {
       "format": "blog"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-nng",
@@ -261,7 +283,9 @@
     "link_status": "unknown",
     "meta": {
       "format": "blog"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-dense-discovery",
@@ -284,7 +308,9 @@
     "meta": {
       "format": "newsletter",
       "cadence": "weekly"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-bytes",
@@ -307,7 +333,9 @@
     "meta": {
       "format": "newsletter",
       "cadence": "3x weekly"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-css-weekly",
@@ -330,7 +358,9 @@
     "meta": {
       "format": "newsletter",
       "cadence": "weekly"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-frontend-focus",
@@ -353,7 +383,9 @@
     "meta": {
       "format": "newsletter",
       "cadence": "weekly"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-sidebar",
@@ -376,7 +408,9 @@
     "meta": {
       "format": "newsletter",
       "cadence": "daily"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-smashing",
@@ -398,7 +432,9 @@
     "link_status": "unknown",
     "meta": {
       "format": "magazine"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-css-for-js",
@@ -420,7 +456,9 @@
     "link_status": "unknown",
     "meta": {
       "format": "course"
-    }
+    },
+    "lens": [],
+    "featured": false
   },
   {
     "id": "rd-web-dev-learn",
@@ -442,6 +480,8 @@
     "link_status": "unknown",
     "meta": {
       "format": "course"
-    }
+    },
+    "lens": [],
+    "featured": false
   }
 ]

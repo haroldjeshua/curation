@@ -48,3 +48,9 @@ public/entries.json
 /public/libraries/
 /public/skills/
 /public/reading/
+
+# intake staging (personal/raw captures never committed)
+# shortlist/ and published/ ARE committed; everything raw stays local.
+/intake/candidates/
+/intake/seeded/
+/intake/*.html

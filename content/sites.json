@@ -7,13 +7,23 @@
     "url": "https://example.com/studio",
     "tagline": "A fictional studio site proving the entry model.",
     "note": "Seed entry. Note how the write-up names one thing to steal: the project index that reads like a table of contents, not a carousel.",
-    "tags": ["editorial", "typography", "motion"],
-    "status": "published",
+    "tags": [
+      "editorial",
+      "typography",
+      "motion"
+    ],
+    "status": "draft",
     "source": "seed",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "type": "agency", "industry": ["design"], "captured_at": "2026-10-01" }
+    "meta": {
+      "type": "agency",
+      "industry": [
+        "design"
+      ],
+      "captured_at": "2026-10-01"
+    }
   },
   {
     "id": "seed-site-02",
@@ -23,12 +33,22 @@
     "url": "https://example.com/product",
     "tagline": "A fictional product page proving the entry model.",
     "note": "Seed entry. Steal the pricing-page structure: one idea per viewport, no competing CTAs above the fold.",
-    "tags": ["product", "pricing", "hierarchy"],
-    "status": "published",
+    "tags": [
+      "product",
+      "pricing",
+      "hierarchy"
+    ],
+    "status": "draft",
     "source": "seed",
     "added_at": "2026-10-01",
     "reviewed_at": "2026-10-01",
     "link_status": "unknown",
-    "meta": { "type": "product", "industry": ["saas"], "captured_at": "2026-10-01" }
+    "meta": {
+      "type": "product",
+      "industry": [
+        "saas"
+      ],
+      "captured_at": "2026-10-01"
+    }
   }
 ]
