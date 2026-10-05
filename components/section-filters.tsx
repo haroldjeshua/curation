@@ -1,20 +1,40 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { LayoutGrid, List, Rows3 } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
 import type { Entry } from "@/lib/entries";
 import { EmptyState } from "./empty-state";
 import { EntryCard } from "./entry-card";
+import { EntryRow } from "./entry-row";
+import { EntryTextLine } from "./entry-text-line";
+
+export type SectionView = "cards" | "list" | "text";
+
+const VIEWS: { value: SectionView; label: string; icon: React.ReactNode }[] = [
+  { value: "cards", label: "Cards", icon: <LayoutGrid className="size-4" /> },
+  { value: "list", label: "List", icon: <List className="size-4" /> },
+  { value: "text", label: "Text", icon: <Rows3 className="size-4" /> },
+];
 
 interface SectionFiltersProps {
   sectionSlug: string;
   entries: Entry[];
   facetField: string;
   facetLabel: string;
+  view: SectionView;
 }
 
-export function SectionFilters({ sectionSlug, entries, facetField, facetLabel }: SectionFiltersProps) {
+export function SectionFilters({ sectionSlug, entries, facetField, facetLabel, view }: SectionFiltersProps) {
   const [query, setQuery] = useState("");
   const [facet, setFacet] = useState<string | null>(null);
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const changeView = (next: SectionView) => {
+    window.localStorage.setItem(`curation:view:${sectionSlug}`, next);
+    router.replace(`${pathname}?view=${next}`, { scroll: false });
+  };
 
   const facetValues = useMemo(() => {
     const counts = new Map<string, number>();
@@ -85,16 +105,52 @@ export function SectionFilters({ sectionSlug, entries, facetField, facetLabel }:
         ) : null}
       </div>
 
-      <p aria-live="polite" className="mt-4 font-mono text-xs text-muted-foreground">
-        {filtered.length} of {entries.length} entries
-      </p>
-
-      {filtered.length > 0 ? (
-        <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((entry) => (
-            <EntryCard key={entry.id} entry={entry} sectionSlug={sectionSlug} />
+      <div className="mt-4 flex items-center justify-between gap-3">
+        <p aria-live="polite" className="font-mono text-xs text-muted-foreground">
+          {filtered.length} of {entries.length} entries
+        </p>
+        <div role="group" aria-label="View options" className="flex shrink-0 rounded-md border">
+          {VIEWS.map((v, i) => (
+            <button
+              key={v.value}
+              type="button"
+              onClick={() => changeView(v.value)}
+              aria-pressed={view === v.value}
+              aria-label={`${v.label} view`}
+              title={`${v.label} view`}
+              className={`inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs transition-colors ${
+                i === 0 ? "rounded-l-[5px]" : ""
+              } ${i === VIEWS.length - 1 ? "rounded-r-[5px]" : ""} ${
+                view === v.value ? "bg-foreground text-background" : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              {v.icon}
+              <span className="hidden sm:inline">{v.label}</span>
+            </button>
           ))}
         </div>
+      </div>
+
+      {filtered.length > 0 ? (
+        view === "list" ? (
+          <div className="mt-2 border-b">
+            {filtered.map((entry, i) => (
+              <EntryRow key={entry.id} entry={entry} sectionSlug={sectionSlug} index={i} />
+            ))}
+          </div>
+        ) : view === "text" ? (
+          <div className="mt-2 border-b">
+            {filtered.map((entry) => (
+              <EntryTextLine key={entry.id} entry={entry} sectionSlug={sectionSlug} />
+            ))}
+          </div>
+        ) : (
+          <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {filtered.map((entry) => (
+              <EntryCard key={entry.id} entry={entry} sectionSlug={sectionSlug} />
+            ))}
+          </div>
+        )
       ) : (
         <div className="mt-4">
           <EmptyState title="Nothing matches." hint="Clear the filter or try another term." />

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { EmptyState } from "@/components/empty-state";
-import { SectionFilters } from "@/components/section-filters";
+import { SectionFilters, type SectionView } from "@/components/section-filters";
+import { ViewRestore } from "@/components/view-restore";
 import { getEntries, getSection, sections } from "@/lib/entries";
 
 const facets: Record<string, { field: string; label: string }> = {
@@ -11,6 +12,20 @@ const facets: Record<string, { field: string; label: string }> = {
   skills: { field: "type", label: "Type" },
   reading: { field: "format", label: "Format" },
 };
+
+const defaultViews: Record<string, SectionView> = {
+  sites: "cards",
+  systems: "list",
+  libraries: "list",
+  skills: "text",
+  reading: "text",
+};
+
+function resolveView(raw: string | string[] | undefined, sectionSlug: string): SectionView {
+  const value = Array.isArray(raw) ? raw[0] : raw;
+  if (value === "cards" || value === "list" || value === "text") return value;
+  return defaultViews[sectionSlug] ?? "cards";
+}
 
 export function generateStaticParams() {
   return sections.map((s) => ({ section: s.slug }));
@@ -28,13 +43,16 @@ export async function generateMetadata({
 
 export default async function SectionPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ section: string }>;
+  searchParams: Promise<{ view?: string | string[] }>;
 }) {
   const { section: slug } = await params;
   const section = getSection(slug);
   if (!section) notFound();
 
+  const view = resolveView((await searchParams).view, slug);
   const entries = getEntries(slug);
   const facet = facets[slug] ?? { field: "type", label: "Type" };
 
@@ -49,12 +67,16 @@ export default async function SectionPage({
       </p>
 
       {entries.length > 0 ? (
-        <SectionFilters
-          sectionSlug={slug}
-          entries={entries}
-          facetField={facet.field}
-          facetLabel={facet.label}
-        />
+        <>
+          <SectionFilters
+            sectionSlug={slug}
+            entries={entries}
+            facetField={facet.field}
+            facetLabel={facet.label}
+            view={view}
+          />
+          <ViewRestore sectionSlug={slug} serverView={view} />
+        </>
       ) : (
         <div className="mt-8">
           <EmptyState title="Nothing published here yet." hint="Check back after the next curation pass." />
