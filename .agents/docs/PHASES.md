@@ -12,17 +12,17 @@
 **Goal:** decide what survives from 2024, and put the groundwork in place.
 
 Tasks
-- [ ] Audit the old repo: stack, dependencies, components worth keeping (likely few).
-- [ ] Decide fresh scaffold vs reuse (default: fresh; see PROJECT.md T2).
-- [ ] Commit `PROJECT.md`, `PHILOSOPHY.md`, `PHASES.md` to the repo root.
-- [ ] Write a project `CLAUDE.md` pointing agents at the 3Ps and the stack.
+- [x] Audit the old repo (CURATION-ARCHAEOLOGY.md, 2026-10-01).
+- [x] Decide fresh scaffold vs reuse (fresh; see PROJECT.md T2).
+- [x] Commit `PROJECT.md`, `PHILOSOPHY.md`, `PHASES.md` to the repo (kept in `.agents/docs/` per 2026-10-01 decision; `AGENTS.md` + `CLAUDE.md` at root instead).
+- [x] Write a project `CLAUDE.md` pointing agents at the 3Ps and the stack.
 - [ ] Point `curation.harv.computer` at the Vercel project; plan the redirect from the legacy URL.
 - [ ] Replace the legacy site with a minimal "reopening" holding page (optional but cheap).
 
 Exit criteria
-- [ ] Keep/discard decision recorded in the repo.
+- [x] Keep/discard decision recorded in the repo.
 - [ ] Domain resolves to a deployed page.
-- [ ] 3Ps and `CLAUDE.md` are in the repo.
+- [x] 3Ps and `CLAUDE.md` are in the repo.
 
 ---
 
@@ -32,11 +32,11 @@ Exit criteria
 
 Tasks
 - [x] Scaffold Next.js 16 + TypeScript strict + Tailwind v4 + pnpm (branch `scaffold/fresh-next16`, `pnpm build` verified 2026-10-01).
-- [ ] Define design tokens as CSS custom properties; write a short `DESIGN.md` (palette, type, density, motion).
-- [ ] Layout, header nav with the five sections, footer, theme handling.
-- [ ] Content schema for `entries` (common fields + `meta`, JSON per PROJECT.md §4.4, DB-shaped for the Phase 4 migration) + seed script with a handful of fake entries per kind.
-- [ ] Section index page and entry detail page, reading from content-in-repo.
-- [ ] ⌘K command palette shell (navigation only at this stage).
+- [x] Define design tokens as CSS custom properties; write a short `DESIGN.md` (palette, type, density, motion).
+- [x] Layout, header nav with the five sections, footer, theme handling.
+- [x] Content schema for `entries` (common fields + `meta`, JSON per PROJECT.md §4.4, DB-shaped for the Phase 4 migration) + seed script with a handful of fake entries per kind.
+- [x] Section index page and entry detail page, reading from content-in-repo.
+- [x] ⌘K command palette shell (navigation only at this stage).
 
 Exit criteria
 - [x] All five section routes render from content-in-repo (verified `pnpm build`: 5 section + 10 entry pages SSG, 2026-10-01).
@@ -70,16 +70,23 @@ Exit criteria
 
 **Goal:** the original Seesaw/Mobbin-lane vision, scoped small.
 
+**Prerequisite:** the intake pipeline and bar in CURATION-PLAYBOOK.md (candidates → shortlist → annotated → published) must exist before Sites is populated; never populate Sites from unfiltered notes or bookmarks.
+
 Tasks
 - [ ] Decide capture method (manual vs headless) and storage (see PROJECT.md T4).
 - [ ] Thumbnail + optional detail image pipeline with sensible size limits.
 - [ ] Gallery layout with `type` and `industry` facets.
 - [ ] Attribution and link-back on every card and detail page.
-- [ ] Populate ~30 Sites with notes.
+- [ ] Populate ~30 Sites with notes, only from entries that cleared the playbook's bar.
+- [ ] Build intake tooling: `intake:validate`, `intake:obsidian`, `intake:bookmarks`, and a seed command (PLAYBOOK §3–§7).
+- [ ] Mark all placeholder entries `source: seed`; the production build fails if any remain.
+- [ ] View options: Cards · List · Text segmented control, URL-driven (`?view=`), per-section defaults, accessible (PLAYBOOK §8).
 
 Exit criteria
 - [ ] Gallery loads fast on mobile and degrades gracefully without images.
 - [ ] Every site entry has a note, attribution, and captured date.
+- [ ] All three views render the same entries and filters; List and Text are useful without images.
+- [ ] No seed entries in the production dataset.
 
 ---
 
@@ -136,6 +143,13 @@ Exit criteria
 - Filipino lens/tag across entries
 - Collections or curated "packs" (e.g., "references for a dashboard")
 - Reuse of `@pilipinas/themes` tokens
+- **Brave bookmark importer:** parse exported bookmark HTML into draft entries for triage (see `CURATING.md` funnel)
+
+### Backlog (recorded, not scheduled)
+
+- **Thumbnail scale:** how inspiration/resource sites like Seesaw handle large volumes of image and video thumbnails. Overlaps T4; the image half needs a minimal answer in Phase 3, video can wait.
+- **Site metadata and favicons:** gather and display each site's metadata (including favicon) inline, not just name and link. Improves the List view.
+- **Accounts and personal collections:** auth/login/signup so people can keep their own curated collections (in the spirit of bmrks.com), share lists like "top 10 design engineering resources", or share tech stacks and tools. Conflicts with PHILOSOPHY.md principles 2 and 8. Decide deliberately before building; do not build speculatively.
 
 ## Agent working rules for this repo
 

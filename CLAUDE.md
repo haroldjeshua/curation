@@ -7,4 +7,4 @@
 - Follow `AGENTS.md` working rules as stated there; do not duplicate them here.
 - Work only within the current phase per `PHASES.md`; stop at exit criteria.
 - Entry rule is absolute: never publish an entry without a curator's note.
-- Locked stack direction: fresh scaffold (Next 15 + TS strict + Tailwind v4 + pnpm), content-in-repo until Phase 4. Do not introduce Postgres, auth, or search services in Phases 1–3.
+- Locked stack direction: fresh scaffold (Next 16 + TS strict + Tailwind v4 + pnpm), content-in-repo until Phase 4. Do not introduce Postgres, auth, or search services in Phases 1–3.

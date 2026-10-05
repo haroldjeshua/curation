@@ -21,7 +21,7 @@ The library is ordered by the curator's judgment and by recency, never by popula
 
 ## 3. Two readers, one source of truth
 
-Humans and agents read the same data. The machine surface (`llms.txt`, per-entry Markdown, JSON) is generated from the database, never hand-maintained in parallel.
+Humans and agents read the same data. The machine surface (`llms.txt`, per-entry Markdown, JSON) is generated from the same source data, never hand-maintained in parallel.
 
 - **Do:** treat the machine surface as a first-class output of every content change.
 - **Don't:** build features that exist only in the human UI and cannot be expressed in the data.
@@ -85,3 +85,5 @@ When two good options conflict, use this order:
 ## Non-goals
 
 Curation is not a social network, a marketplace, a design system product, a template store, or a news feed.
+
+Open question (deliberately unresolved): user accounts and personal collections. They pull against principles 2 and 8, so they are parked in the PHASES.md backlog. Do not build any account, sharing or social feature until Harv has explicitly decided.

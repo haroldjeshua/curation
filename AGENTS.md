@@ -1,7 +1,7 @@
 # Curation — Agent Entry Point
 
 > Live target: `curation.harv.computer` · Legacy: `harv-curation.vercel.app` (2024 shell, zero content)
-> Source of truth: `.agents/docs/` — read all three before touching code: `PROJECT.md`, `PHILOSOPHY.md`, `PHASES.md`. Then read `CURATION-ARCHAEOLOGY.md` (Phase 0 report, repo root).
+> Source of truth: `.agents/docs/` — read these before touching code: `PROJECT.md`, `PHILOSOPHY.md`, `PHASES.md`, `CURATION-PLAYBOOK.md`. Then read `CURATION-ARCHAEOLOGY.md` (Phase 0 report, repo root).
 
 ## What this is
 
@@ -15,7 +15,7 @@ Personal, annotated reference library for design engineers: Sites · Systems · 
 
 ## Working rules
 
-1. Read the 3Ps + archaeology report first.
+1. Read the 3Ps + playbook + archaeology report first.
 2. Work only within the current phase (`PHASES.md`); stop at exit criteria and report what remains unchecked.
 3. One phase or task at a time; explain non-obvious choices briefly; justify every new dependency in one sentence.
 4. Never publish an entry without a note. No votes, rankings, comments, trending, or community mechanics.

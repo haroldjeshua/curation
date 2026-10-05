@@ -2,7 +2,7 @@
 
 > Status: pre-build · v0.1 · 2026-10-01
 > Live target: `curation.harv.computer` · Legacy: `harv-curation.vercel.app` (2024, abandoned)
-> Companion docs: `PHILOSOPHY.md`, `PHASES.md`
+> Companion docs: `PHILOSOPHY.md`, `PHASES.md`, `CURATION-PLAYBOOK.md`
 > Audience for this doc: Harv, and any coding agent working in the repo. Read all three before touching code.
 
 ---
@@ -127,13 +127,13 @@ Resulting top-level IA (still five, but each is concrete): **Sites · Systems ·
 
 Common fields for every entry:
 
-`id, slug, kind, title, url, tagline, note, tags[], status (draft|published|archived), source (curator|suggestion), added_at, reviewed_at, link_status, media?, meta (jsonb)`
+`id, slug, kind, title, url, tagline, note, tags[], status (draft|published|archived), source (curator|suggestion|seed), added_at, reviewed_at, link_status, media?, lens[] (craft|deseng|delight), featured? (boolean), meta (jsonb)`
 
 Kind-specific `meta`:
 
 - `site`: `{ type: product|portfolio|agency|app, industry: [], captured_at }`
 - `system`: `{ org, docs_url, tokens_url?, figma_url?, repo_url?, has_llms_txt?, license? }`
-- `library`: `{ category: ui|icons|motion|fonts|3d, frameworks: [], license, install? }`
+- `library`: `{ category: ui|icons|motion|fonts|3d|reference, frameworks: [], license, install? }`
 - `skill`: `{ install?, repo_url, agents: [] }`
 - `reading`: `{ format: blog|newsletter|course|magazine|talk, cadence? }`
 
@@ -185,7 +185,7 @@ Matches the existing project standard unless noted.
 | T1 | Source of truth: Postgres vs content-in-repo (JSON/MDX) | **Decided 2026-10-01: content-in-repo (JSON/MDX) for Phases 1–3; Postgres on Neon + Drizzle at Phase 4** | v1 is ~75 hand-written entries with no queue or link-jobs yet — a DB buys infra overhead (migrations, secrets, local dev DB) for zero payoff. JSON rows shaped 1:1 to the §4.4 entry model migrate mechanically when the suggestion queue + link-health job land. Static exports (`llms.txt`, per-entry Markdown, JSON) generate at build either way. |
 | T2 | Fresh repo vs reuse the 2024 repo | **Decided 2026-10-01: fresh scaffold** | Phase 0 archaeology confirmed zero content, Next 14 + Tailwind v3 stack, placeholder-only routes. Do not upgrade in place. |
 | T3 | Visual tokens: new vs reuse `@pilipinas/themes` | **New, minimal** | Avoid coupling Curation's launch to another project's roadmap. Revisit if the token system is stable. |
-| T4 | Screenshot capture method | **Decide in Phase 3** | Manual vs headless capture changes the whole pipeline. |
+| T4 | Screenshot capture method | **Decide in Phase 3** | Manual vs headless capture changes the whole pipeline. Thumbnail scale is tracked in the PHASES.md backlog; the image half must be minimally decided in Phase 3. |
 
 ---
 
